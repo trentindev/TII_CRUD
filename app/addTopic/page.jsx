@@ -11,7 +11,7 @@ export default function AddTopic() {
         type="text"
         placeholder="Description de l'article"
       />
-      <button className="bg-blue-500 font-bold text-white py-3 px-6 w-fit">Ajouter article</button>
+      <button className="bg-blue-400 font-bold text-white py-3 px-6 w-fit">Ajouter article</button>
     </form>
   );
 }
