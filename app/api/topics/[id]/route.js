@@ -6,6 +6,7 @@ export async function PUT(request, { params }) {
   const { id } = params;
   const { newTitle: title, newDescription: description } = await request.json();
   await connectMongoDB();
+  console.log
   await Topic.findByIdAndUpdate(id, { title, description });
   return NextResponse.json({ message: "Article modifié" }, { status: 200 });
 }
