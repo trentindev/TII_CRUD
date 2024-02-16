@@ -8,7 +8,7 @@ export default function RemoveBtn({ id }) {
     const confirmed = confirm("Confirmer la suppression ?");
     console.log(`Suppression du topic avec l'ID ${id}`);
     if (confirmed) {
-      const res = await fetch(`http://localhost:3000/api/topics?id=${id}`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/topics?id=${id}`, {
         method: "DELETE",
       });
       if (res.ok)  {router.refresh()};
