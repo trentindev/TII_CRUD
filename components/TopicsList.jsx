@@ -11,7 +11,7 @@ const getTopics = async () => {
     if (!res.ok) {
       throw new Error("Fetch a échoué");
     }
-    console.log(process.env.NEXT_PUBLIC_API_URL);
+    //console.log(process.env.NEXT_PUBLIC_API_URL);
     return res.json();
   } catch (error) {
     console.log("Erreur de chargement d'article: ", error);
